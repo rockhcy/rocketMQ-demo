@@ -1,0 +1,11 @@
+#  aop:
+#    proxy-target-class: true
+rocketmq:
+  consumer:
+    namesrvAddr: 192.168.10.154:10110 # NameServer地址
+    groupName: hcygroupName #消费组组名
+    topics: hcymsg #消费主题,多主题用逗号分割,pcInfo主题用于客户端发送信息，4种信息用tar标记
+  producer:
+    namesrvAddr: 192.168.10.154:10110 # NameServer地址
+    groupName: producerGroup48 # 生产者的组名
+    topics: idp_order #生产主题，多主题用逗号分割。idp_order主题用于服务端发送指令信息。tar标记mac
